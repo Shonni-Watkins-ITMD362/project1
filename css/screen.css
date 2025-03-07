@@ -306,3 +306,52 @@ input[type="submit"]:hover {
 }
 
 
+
+
+@media (max-width: 600px) {
+  form {
+    padding: 1.5rem;
+  }
+  
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  input[type="email"],
+  input[type="submit"] {
+    font-size: 0.9rem;
+    padding: 0.7rem;
+  }
+}
+
+@media (max-width: 400px) {
+  form {
+    padding: 1rem;
+    border-radius: 100px;
+  }
+  
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  input[type="submit"] {
+    padding: 0.6rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
