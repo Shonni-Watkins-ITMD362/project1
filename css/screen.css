@@ -257,7 +257,17 @@ form {
   width: 100%;
 }
 
+.image-links {
+    display: flex;
+    justify-content: center; 
+    gap: 10px; 
+}
 
+.image-links img {
+    max-width: 100%; 
+    height: auto; 
+    width: 200px; 
+}
 
 
 
