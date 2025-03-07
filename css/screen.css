@@ -260,6 +260,21 @@ form {
 
 
 
+#logo img {
+	justify-content: center;
+  align-items: center;
+    max-width: 100%; 
+    height: auto; 
+    width: 200px; 
+	
+    display: flex;
+ 
+    gap: 10px; 
+}
+
+
+
+
 * {
   margin: 0;
   padding: 0;
