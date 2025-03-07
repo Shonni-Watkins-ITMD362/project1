@@ -1,31 +1,27 @@
+
 document.addEventListener("DOMContentLoaded", () => {
-    const slider = document.querySelector(".slider");
-    const images = document.querySelectorAll(".slider a");
-    const nextButton = document.getElementById("next");
-    const prevButton = document.getElementById("prev");
+  const slider = document.querySelector(".slider");
+  const images = slider.querySelectorAll("img");
+  const nextButton = document.getElementById("next");
+  const prevButton = document.getElementById("prev");
 
-    let currentIndex = 0;
+  let currentIndex = 0;
 
-    function updateSlider() {
-        const offset = -currentIndex * 700; // Moves by 700px each time
-        slider.style.transform = `translateX(${offset}px)`;
-    }
+  function updateSlider() {
+    const offset = -currentIndex * slider.clientWidth;
+    slider.style.transform = `translateX(${offset}px)`;
+  }
 
-    nextButton.addEventListener("click", () => {
-        if (currentIndex < images.length - 1) {
-            currentIndex++;
-        } else {
-            currentIndex = 0; // Loop back to the first image
-        }
-        updateSlider();
-    });
+  nextButton.addEventListener("click", () => {
+    currentIndex = (currentIndex + 1) % images.length;
+    updateSlider();
+  });
 
-    prevButton.addEventListener("click", () => {
-        if (currentIndex > 0) {
-            currentIndex--;
-        } else {
-            currentIndex = images.length - 1; // Loop back to the last image
-        }
-        updateSlider();
-    });
+  prevButton.addEventListener("click", () => {
+    currentIndex = (currentIndex - 1 + images.length) % images.length;
+    updateSlider();
+  });
+
+  // Adjust slider size dynamically
+  window.addEventListener("resize", updateSlider);
 });
