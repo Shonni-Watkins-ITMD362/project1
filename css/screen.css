@@ -350,6 +350,60 @@ input[type="submit"]:hover {
     padding: 0.6rem;
   }
 }
+.slider-container {
+  position: relative;
+  max-width: 700px; /* Set max width */
+  width: 100%;
+  height: 300px; /* Fixed height */
+  margin: auto;
+  overflow: hidden; /* Hide overflowing images */
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%; /* Ensure images are positioned properly */
+}
+
+.slider a {
+  flex-shrink: 0; /* Prevent shrinking */
+  width: 100%; /* Each image takes full width */
+}
+
+.slider img {
+  width: 100%; /* Make sure the images fill their container */
+  height: 100%;
+  object-fit: cover; /* Keep images looking good */
+}
+
+button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+#prev {
+  left: 10px;
+}
+
+#next {
+  right: 10px;
+}
+
+button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
 
 
 
