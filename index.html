@@ -1,26 +1,3 @@
-<!-- ddYou will create a single-page design that features a sign-up process to get new users to join some type of project, such as an email list, a software beta test, or an open-source community. The goal of this project is to experiment with patterns of interaction that persuade someone to sign up for whatever it is you’re offering, which is not at all an easy task.
-
-Project Goals
-Create a mobile-first responsive web design using two media queries
-Apply design principles including typography, color, and material design
-Engage in agile, iterative development; documented with at least 20 commits with informative comments
-Deliverables & Milestones
-First Deliverable: Create a Basecamp post describing your work in progress. Title the post with your name and project number (example Daniel Krieglstein: Project 1). Your post should include:
-The URL to your GitHub repository, and the URL to your Github Pages live link
-Screen shot of your html and css validations
-  -->
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
 <!DOCTYPE html>
 <html lang="en" class="nojs">
 <head>
@@ -31,78 +8,59 @@ Screen shot of your html and css validations
   <link rel="stylesheet" media="screen" href="css/screen.css">
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Wendy+One&display=swap" rel="stylesheet">
-  
-  
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Wendy+One&display=swap" rel="stylesheet">
 </head>
 <body>
   <main id="content">
-      <a id="logo" href="index.html">
+    <a id="logo" href="index.html">
       <img src="images/shso_logo.jpg" alt="Super Hero Squad Logo">
     </a>
-		
-      <h1>Super Hero Squad Online!(Revival)</h1>
+    <h1>Super Hero Squad Online! (Revival)</h1>
     <form method="get" action="#null">
-	
-	
-	  
       <p>
         Blah Blah Blah? Blah Blah! Sign up now!
       </p>
-	  
-	  
-	  
-	  
-		
-	<div class="image-links">
-        <a id= "shso1" href="index.html"><img src="images/shso33.jpg" alt="Marvel heros posing"></a>
-        <a id= "shso2" href="index.html"><img src="images/shso2.jpg" alt="Marvel heros posing"></a>
-        <a id= "shso3" href="index.html"><img src="images/shso1.jpg" alt="Marvel heros posing"></a>
+      <div class="image-links">
+        <a id="shso1" href="index.html">
+          <img src="images/shso33.jpg" alt="Marvel heroes posing">
+        </a>
+        <a id="shso2" href="index.html">
+          <img src="images/shso2.jpg" alt="Marvel heroes posing">
+        </a>
+        <a id="shso3" href="index.html">
+          <img src="images/shso1.jpg" alt="Marvel heroes posing">
+        </a>
       </div>
-		
-		
-      <ol>
-	  
-	<div id="input_first_name">
-     <label for="first_name">First Name</label>
-     <input type="text" name="first_name" id="first_name">
-     </div>
-
-<div id="input_discord_handle">
-     <label for="discord_handle">Discord Handle</label>
-     <input type="text" name="discord_handle" id="discord_handle">
-     </div>
-
-
-     <div id="input_phone_number">
-     <label for="phone_number">Phone Number</label>
-     <input type="tel" name="phone_number" id="phone_number" placeholder="987-333-2000" pattern="[0-9]{10}">
-     </div>
-	 
-     <div id="input_date_of_birth">
-     <label for="date_of_birth">Date of Birth</label>
-     <input type="date" name="date_of_birth" id="date_of_birth">
-     </div>
-	 
-        <li id="input-email">
+      <div class="form-fields">
+        <div id="input_first_name">
+          <label for="first_name">First Name</label>
+          <input type="text" name="first_name" id="first_name">
+        </div>
+        <div id="input_discord_handle">
+          <label for="discord_handle">Discord Handle</label>
+          <input type="text" name="discord_handle" id="discord_handle">
+        </div>
+        <div id="input_phone_number">
+          <label for="phone_number">Phone Number</label>
+          <input type="tel" name="phone_number" id="phone_number" placeholder="987-333-2000" pattern="[0-9]{10}">
+        </div>
+        <div id="input_date_of_birth">
+          <label for="date_of_birth">Date of Birth</label>
+          <input type="date" name="date_of_birth" id="date_of_birth">
+        </div>
+        <div id="input-email">
           <label for="email">Email</label>
           <input type="email" name="email" id="email" pattern="^.+@.+$">
-        </li>
-	
-		
-        <li id="input-submit">
+        </div>
+        <div id="input-submit">
           <input type="submit" name="submit" id="submit" value="Subscribe">
-        </li>
-      </ol>
-	  
-	   <p>
-        Never download anylinks unless they are offcialy verifyed on our discord! Stay safe while keeping the world safe!
+        </div>
+      </div>
+      <p>
+        Never download any links unless they are officially verified on our Discord! Stay safe while keeping the world safe!
       </p>
-	  
     </form>
-	
   </main>
-
 </body>
 </html>
