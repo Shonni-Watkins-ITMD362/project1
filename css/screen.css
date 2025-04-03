@@ -112,6 +112,68 @@ input[type="submit"]:hover {
 
 
 
+
+
+
+
+
+
+
+
+@media (min-width: 600px) {
+  form {
+    padding: 2.5rem;
+    max-width: 500px;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  p {
+    font-size: 1.3rem;
+  }
+
+  input[type="email"],
+  input[type="text"],
+  input[type="tel"],
+  input[type="date"],
+  input[type="checkbox"],
+  input[type="submit"] {
+    font-size: 1.1rem;
+    padding: 0.9rem;
+    width: 80%;
+  }
+}
+
+
+@media (min-width: 900px) {
+  form {
+    max-width: 600px;
+    padding: 3rem;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  p {
+    font-size: 1.4rem;
+  }
+
+  input[type="email"],
+  input[type="text"],
+  input[type="tel"],
+  input[type="date"],
+  input[type="checkbox"],
+  input[type="submit"] {
+    font-size: 1.2rem;
+    padding: 1rem;
+    width: 70%;
+  }
+}
+
+
 .slider-container {
   position: relative;
   max-width: 700px;
